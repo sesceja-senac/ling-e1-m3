@@ -1,0 +1,287 @@
+body {
+  background-color: #e0b722;
+  margin: 0;
+  padding: 0;
+  transition: 2s;
+}
+
+.capa-bg-animado {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+  
+}
+
+.animated-img {
+  height: 33vh;
+}
+
+.animated-img--1 {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  animation: rotation 10s infinite linear;
+}
+
+.animated-img--2 {
+  position: absolute;
+  top: 33vh;
+  transform: translateY(-50%);
+  left: 0;
+  animation: rotation 8s infinite linear;
+}
+
+.animated-img--3 {
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  animation: rotation2 9s infinite linear;
+}
+
+.animated-img--4 {
+  position: absolute;
+  top: -100px;
+  left: 33vw;
+  animation: rotation 10s infinite linear;
+}
+
+.animated-img--5 {
+  position: absolute;
+  top: 33vh;
+  transform: translateY(-50%);
+  left: 33vw;
+  animation: rotation 8s infinite linear;
+}
+
+.animated-img--6 {
+  position: absolute;
+  bottom: -100px;
+  left: 33vw;
+  animation: rotation2 9s infinite linear;
+}
+
+.animated-img--7 {
+  position: absolute;
+  top: -100px;
+  right: 0;
+  animation: rotation 10s infinite linear;
+}
+
+.animated-img--8 {
+  position: absolute;
+  top: 33vh;
+  transform: translateY(-50%);
+  right: 0;
+  animation: rotation 8s infinite linear;
+}
+
+.animated-img--9 {
+  position: absolute;
+  bottom: -100px;
+  right: 0;
+  animation: rotation2 9s infinite linear;
+}
+
+.capa-bg-img {
+  max-height: 99vh;
+  max-width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+}
+
+.link-quadrado {
+  position: absolute;
+  transition: 300ms;
+}
+
+.link-quadrado:hover {
+  transform: scale(1.1);
+}
+
+.link-quadrado--1 {
+  right: 37vw;
+  width: 9vw;
+  bottom: 64vh;
+}
+
+.link-quadrado--2 {
+  right: 26vw;
+  width: 9vw;
+  bottom: 64vh;
+}
+
+.link-quadrado--3 {
+  right: 37vw;
+  width: 9vw;
+  bottom: 50vh;
+}
+
+.link-quadrado--4 {
+  right: 26vw;
+  width: 9vw;
+  bottom: 50vh;
+}
+
+
+.link-quadrado--5 {
+  right: 37vw;
+  width: 9vw;
+  bottom: 35.5vh;
+}
+
+.link-quadrado--6 {
+  right: 26vw;
+  width: 9vw;
+  bottom: 35.5vh;
+}
+
+.link-quadrado--7 {
+  right: 26vw;
+  width: 20vw;
+  bottom: 27.5vh;
+}
+
+.link-quadrado--8 {
+  right: 26vw;
+  width: 20vw;
+  bottom: 19.5vh;
+}
+
+.link-quadrado--9 {
+  right: 26vw;
+  width: 20vw;
+  bottom: 11.7vh;
+}
+
+.title {
+  position: absolute;
+  bottom: 10vh;
+  left: 15vw;
+  width: 28vw;
+}
+
+.megafone-mobile {
+  width: 40vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.titulo-mobile {
+  width: 50vw;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  left: 20px;
+}
+
+/* mobile */
+
+.links-mobile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mobile-only .link-quadrado {
+  position:unset;
+}
+
+.mobile-only .link-quadrado--1 {
+  width: 200px;
+  max-width: 45vw;
+}
+
+.mobile-only .link-quadrado--2 {
+  width: 200px;
+  max-width: 45vw;
+}
+
+.mobile-only .link-quadrado--3 {
+  width: 200px;
+  max-width: 45vw;
+}
+
+.mobile-only .link-quadrado--4 {
+  width: 200px;
+  max-width: 45vw;
+}
+
+
+.mobile-only .link-quadrado--5 {
+  width: 200px;
+  max-width: 45vw;
+}
+
+.mobile-only .link-quadrado--6 {
+  width: 200px;
+  max-width: 45vw;
+}
+
+.mobile-only .link-quadrado--7 {
+  width: 395px;
+  max-width: 99vw;
+}
+
+.mobile-only .link-quadrado--8 {
+  width: 395px;
+  max-width: 99vw;
+}
+
+.mobile-only .link-quadrado--9 {
+  width: 395px;
+  max-width: 99vw;
+}
+
+.links-mobile--primeiro {
+  margin-top: 43vw;
+}
+
+.mobile-only, .links-mobile {
+  display: none;
+}
+
+
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(359deg);
+  }
+}
+
+
+
+@keyframes rotation2 {
+  from {
+      transform: rotate(359deg);
+  }
+  to {
+      transform: rotate(0deg) ;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .desk-only {
+    display: none;
+  }
+  .bg {
+    background-image: url(../capa/img/tela-inicial-mobilebg.png);
+  }
+  .mobile-only {
+  display: block; 
+  }
+  .links-mobile {
+    display: flex;
+  }
+}
